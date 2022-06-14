@@ -1177,6 +1177,7 @@ ul {
   border-radius: .6rem;
   padding: 0rem 2.6rem 0rem 1.6rem; }
   .SearchInput-icon {
+    cursor: pointer;
     width: 1.2rem;
     height: 1.2rem;
     position: absolute;

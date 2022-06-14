@@ -161,7 +161,7 @@ const formSearch = {
     const form = document.querySelector(".SearchInput");
     form.addEventListener("submit", (e) => {
       e.preventDefault();
-      window.location.href = "/ket-qua-tim-kiem.html";
+      window.location.href = "ket-qua-tim-kiem.html";
     });
   },
 };
