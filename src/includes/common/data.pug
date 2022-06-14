@@ -1,0 +1,447 @@
+-
+  const dataNavigation = [
+    {
+      path: ['/', '/index.html'],
+      title: 'Trang chủ',
+      icon: 'home',
+      link: '/index.html',
+    },
+    {
+      path: ['/gioi-thieu.html'],
+      title: 'Giới thiệu',
+      icon: 'info',
+      link: 'gioi-thieu.html',
+    },
+    {
+      path: ['/xay-dung-dang.html'],
+      title: 'Xây dựng Đảng',
+      icon: 'party',
+      link: 'xay-dung-dang.html',
+    },
+    {
+      path: ['/van-ban.html'],
+      title: 'Văn bản',
+      icon: 'document',
+      link: 'van-ban.html',
+    },
+    {
+      path: ['/khac.html'],
+      title: 'Khác',
+      class: 'js-open-sidebar',
+      icon: 'grid',
+      link: '#',
+    },
+  ]
+
+  const dataSidebar = [
+    {
+      path: ['/', '/index.html'],
+      title: 'Trang chủ',
+      icon: 'home',
+      link: '/index.html',
+    },
+    {
+      path: [],
+      title: 'Thời sự - Chính trị',
+      icon: 'bookmark',
+      link: '#',
+      children: [
+        {
+          path: [],
+          title: 'Tin tức - sự kiện',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'Hoạt động của cấp ủy',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+      ],
+    },
+    {
+      path: [],
+      title: 'Kinh tế',
+      icon: 'bookmark',
+      link: '#',
+      children: [
+        {
+          path: [],
+          title: 'Kinh tế vĩ mô',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'Kinh tế thế giới',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+      ],
+    },
+    {
+      path: [],
+      title: 'Văn hóa',
+      icon: 'bookmark',
+      link: '#',
+      children: [
+        {
+          path: [],
+          title: 'Văn hoá dân tộc',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'Phong tục tập quán',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+      ],
+    },
+    {
+      path: [],
+      title: 'Quốc phòng - An ninh',
+      icon: 'bookmark',
+      link: '#',
+      children: [
+        {
+          path: [],
+          title: 'Quân đội',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'An ninh Quốc gia',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+      ],
+    },
+    {
+      path: [],
+      title: 'Đất và người Tuyên Quang',
+      icon: 'bookmark',
+      link: 'danh-muc.html',
+      children: [],
+    },
+    {
+      path: [],
+      title: 'Phòng chống dịch Covid-19',
+      icon: 'bookmark',
+      link: 'danh-muc.html',
+      children: [],
+    },
+    {
+      path: ['/lien-ket.html'],
+      title: 'Liên kết',
+      icon: 'link',
+      link: 'lien-ket.html',
+      children: [],
+    },
+    {
+      path: ['/lien-he.html'],
+      title: 'Liên hệ',
+      icon: 'mail',
+      link: 'lien-he.html',
+      children: [],
+    },
+  ]
+
+  const dataCarouselFeatureNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613202449_96645.jpg',
+      title: 'Mục tiêu, nhiệm vụ và giải pháp Kế hoạch triển khai thực hiện  Chương trình về phòng, chống bạo lực gia đình trong tình hình mới  đến năm 2025 trên địa bàn tỉnh Tuyên Quang',
+      category: 'Tin nổi bật',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613202137_96644.jpg',
+      title: 'Quốc hội sẽ biểu quyết thông qua 5 dự án luật, 13 dự thảo Nghị quyết',
+      category: 'Tin nổi bật',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261415402_96652.jpg',
+      title: 'Chủ tịch UBND tỉnh Nguyễn Văn Sơn làm việc với Đoàn công tác Văn phòng Cơ quan hợp tác quốc tế (JICA) Việt Nam',
+      category: 'Tin nổi bật',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226149317_96648.jpg',
+      title: 'Tăng lương tối thiểu vùng cho người lao động từ 01/7/2022',
+      category: 'Tin nổi bật',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613212040_96647.jpg',
+      title: 'Tự phê bình và phê bình',
+      category: 'Tin nổi bật',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613211352_96646.png',
+      title: 'Quá trình hoạt động cách mạng của đồng chí Hồ Tùng Mậu',
+      category: 'Tin nổi bật',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261373710_96640.jpg',
+      title: 'Thường trực Tỉnh ủy cho ý kiến một số chủ trương quan trọng',
+      category: 'Tin nổi bật',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataListFeatureNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613202449_96645.jpg',
+      title: 'Mục tiêu, nhiệm vụ và giải pháp Kế hoạch triển khai thực hiện  Chương trình về phòng, chống bạo lực gia đình trong tình hình mới  đến năm 2025 trên địa bàn tỉnh Tuyên Quang',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613202137_96644.jpg',
+      title: 'Quốc hội sẽ biểu quyết thông qua 5 dự án luật, 13 dự thảo Nghị quyết',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261415402_96652.jpg',
+      title: 'Chủ tịch UBND tỉnh Nguyễn Văn Sơn làm việc với Đoàn công tác Văn phòng Cơ quan hợp tác quốc tế (JICA) Việt Nam',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226149317_96648.jpg',
+      title: 'Tăng lương tối thiểu vùng cho người lao động từ 01/7/2022',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613212040_96647.jpg',
+      title: 'Tự phê bình và phê bình',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613211352_96646.png',
+      title: 'Quá trình hoạt động cách mạng của đồng chí Hồ Tùng Mậu',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261373710_96640.jpg',
+      title: 'Thường trực Tỉnh ủy cho ý kiến một số chủ trương quan trọng',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataCarouselLastestNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022610164057_96634.jpg',
+      title: 'Tạo nền móng vững chắc trong sản xuất nông nghiệp',
+      category: 'Tin mới nhất',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202267164657_96623.jpg',
+      title: 'Sắc vàng mùa gặt',
+      category: 'Tin mới nhất',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202266141130_96618.jpg',
+      title: 'Lâm Bình phát triển cây dược liệu dưới tán rừng',
+      category: 'Tin mới nhất',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226117555_96593.jpg',
+      title: 'Chuyển đổi số: Tạo bước đột phá trong sản xuất nông nghiệp',
+      category: 'Tin mới nhất',
+      date: '16h45 10/06/2022',
+    },
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022531164749_96587.jpg',
+      title: 'Đẩy nhanh tiến độ giải ngân vốn đầu tư công',
+      category: 'Tin mới nhất',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataListLastestNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022610164057_96634.jpg',
+      title: 'Tạo nền móng vững chắc trong sản xuất nông nghiệp',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202267164657_96623.jpg',
+      title: 'Sắc vàng mùa gặt',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202266141130_96618.jpg',
+      title: 'Lâm Bình phát triển cây dược liệu dưới tán rừng',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226117555_96593.jpg',
+      title: 'Chuyển đổi số: Tạo bước đột phá trong sản xuất nông nghiệp',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022531164749_96587.jpg',
+      title: 'Đẩy nhanh tiến độ giải ngân vốn đầu tư công',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataList = [
+    {
+      link: '#',
+      title: 'THƯỜNG TRỰC TỈNH ỦY',
+    },
+    {
+      link: '#',
+      title: 'BAN THƯỜNG VỤ TỈNH ỦY',
+    },
+    {
+      link: '#',
+      title: 'ỦY BAN KIỂM TRA TỈNH ỦY',
+    },
+    {
+      link: '#',
+      title: 'BAN CHẤP HÀNH ĐẢNG BỘ TỈNH TUYÊN QUANG',
+    },
+  ]
+
+  const dataHashTags = [
+    { link: 'ket-qua-tim-kiem.html', title: '#Tất cả', active: true },
+    { link: 'ket-qua-tim-kiem.html', title: '#Văn kiện đại hội' },
+    { link: 'ket-qua-tim-kiem.html', title: '#Văn bản của tỉnh' },
+    { link: 'ket-qua-tim-kiem.html', title: '#Văn bản của TW' },
+    { link: 'ket-qua-tim-kiem.html', title: '#Tài liệu lịch sử' },
+    { link: 'ket-qua-tim-kiem.html', title: '#Tài liệu tuyên truyền' },
+    { link: 'ket-qua-tim-kiem.html', title: '#Văn bản hướng dẫn về Học tập và làm theo Bác' },
+  ]
+
+  const dataDocuments = [
+    {
+      link: '#',
+      title: '23-HD/BTGTU',
+      type: 'Thể loại: hướng dẫn',
+      description: 'Hướng dẫn tổ chức Hội thi giảng viên lý luận chính trị giỏi',
+      owner: 'Văn bản của TW',
+      date: 'Ban hành: 30/08/2021',
+    },
+    {
+      link: '#',
+      title: '01-QĐ/BCĐ',
+      type: 'Thể loại: quyết định',
+      description: 'Ban hành Quy chế làm việc và phân công nhiệm vụ của Ban Chỉ đạo phòng, chống dịch COVID-19, thúc đẩy phát triển kinh tế-xã hội, đảm bảo quốc phòng - an ninh',
+      owner: 'Văn bản của tỉnh',
+      date: 'Ban hành: 24/09/2021',
+    },
+    {
+      link: '#',
+      title: '07-KH/BTGTU',
+      type: 'Thể loại: kế hoạch',
+      description: 'Kế hoạch tổ chức Hội thi báo cáo viên, tuyên truyền viên giỏi tuyên truyền về Nghị quyết Đại hội lần thứ XIII của Đảng và Nghị quyết Đại hội Đảng bộ tỉnh lần thứ XVII',
+      owner: 'Tài liệu tuyên truyền',
+      date: 'Ban hành: 24/02/2021',
+    },
+    {
+      link: '#',
+      title: 'So 01-HDIBTGTU',
+      type: 'Thể loại: hướng dẫn',
+      description: 'Tuyên truyền kỷ niệm 90 năm ngày thành lập Dân tộc thống nhất Việt Nam - Ngày truyền thống Mặt trận Tổ quốc Việt Nam 18/11/1930 - 18/11/2020',
+      owner: 'Tài liệu tuyên truyền',
+      date: 'Ban hành: 22/10/2020',
+    },
+    {
+      link: '#',
+      title: 'Báo cáo Chính trị Đại Hội Đảng bộ Tỉnh',
+      type: 'Thể loại: khác',
+      description: 'Báo cáo Chính trị Đại Hội Đảng bộ Tỉnh Tuyên Quang Khóa XVII',
+      owner: 'Văn kiện đại hội',
+      date: 'Ban hành: 02/10/2020',
+    },
+    {
+      link: '#',
+      title: '23-HD/BTGTU',
+      type: 'Thể loại: hướng dẫn',
+      description: 'Hướng dẫn tổ chức Hội thi giảng viên lý luận chính trị giỏi',
+      owner: 'Văn bản của TW',
+      date: 'Ban hành: 30/08/2021',
+    },
+    {
+      link: '#',
+      title: '01-QĐ/BCĐ',
+      type: 'Thể loại: hướng dẫn',
+      description: 'Hướng dẫn tổ chức Hội thi giảng viên lý luận chính trị giỏi',
+      owner: 'Văn bản của TW',
+      date: 'Ban hành: 30/08/2021',
+    },
+    {
+      link: '#',
+      title: '01-QĐ/BCĐ',
+      type: 'Thể loại: quyết định',
+      description: 'Ban hành Quy chế làm việc và phân công nhiệm vụ của Ban Chỉ đạo phòng, chống dịch COVID-19, thúc đẩy phát triển kinh tế-xã hội, đảm bảo quốc phòng - an ninh',
+      owner: 'Văn bản của tỉnh',
+      date: 'Ban hành: 24/09/2021',
+    },
+    {
+      link: '#',
+      title: '07-KH/BTGTU',
+      type: 'Thể loại: kế hoạch',
+      description: 'Kế hoạch tổ chức Hội thi báo cáo viên, tuyên truyền viên giỏi tuyên truyền về Nghị quyết Đại hội lần thứ XIII của Đảng và Nghị quyết Đại hội Đảng bộ tỉnh lần thứ XVII',
+      owner: 'Tài liệu tuyên truyền',
+      date: 'Ban hành: 24/02/2021',
+    },
+    {
+      link: '#',
+      title: 'So 01-HDIBTGTU',
+      type: 'Thể loại: hướng dẫn',
+      description: 'Tuyên truyền kỷ niệm 90 năm ngày thành lập Dân tộc thống nhất Việt Nam - Ngày truyền thống Mặt trận Tổ quốc Việt Nam 18/11/1930 - 18/11/2020',
+      owner: 'Tài liệu tuyên truyền',
+      date: 'Ban hành: 22/10/2020',
+    },
+    {
+      link: '#',
+      title: 'Báo cáo Chính trị Đại Hội Đảng bộ Tỉnh',
+      type: 'Thể loại: khác',
+      description: 'Báo cáo Chính trị Đại Hội Đảng bộ Tỉnh Tuyên Quang Khóa XVII',
+      owner: 'Văn kiện đại hội',
+      date: 'Ban hành: 02/10/2020',
+    },
+  ]

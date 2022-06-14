@@ -1,0 +1,9 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  include includes/containers/NewsCarousels.pug
+  +ImageBanner({ image: './assets/images/image-banner.png' })
+
+  div
+    +NewsList({ title: 'XÂY DỰNG ĐẢNG VÀ HỆ THỐNG CHÍNH TRỊ', data: dataListFeatureNews })
+    +NewsList({ title: 'NGHIÊN CỨU TRAO ĐỔI', data: dataListLastestNews })

@@ -1,0 +1,10 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  +Breadcrumb({ title: 'Liên kết' })
+
+  div
+    +List({ title: 'ĐẢNG BỘ TỈNH KHÓA XVII', data: dataList })
+    +List({ title: 'CƠ QUAN THAM MƯU, GIÚP VIỆC TỈNH ỦY', data: dataList })
+    +List({ title: 'HUYỆN ỦY/THÀNH ỦY TRỰC THUỘC', data: dataList })
+    +List({ title: 'ĐẢNG BỘ TRỰC THUỘC', data: dataList })

@@ -1,0 +1,19 @@
+.Tag {
+  display: block;
+  width: fit-content;
+  font-size: 1.2rem;
+  font-family: 'Nunito', sans-serif;
+  transition: $common-transition;
+  color: $gray;
+  cursor: pointer;
+  border-radius: 1rem;
+  border: 1px solid $white-lilac;
+  padding: 0.5rem 1rem;
+
+  &:hover,
+  &.active {
+    background: linear-gradient(119.65deg, $coral-red 0%, $geraldine 128.41%);
+    border-color: $sundown;
+    color: $white;
+  }
+}

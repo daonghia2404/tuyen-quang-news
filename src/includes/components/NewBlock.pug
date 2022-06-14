@@ -1,0 +1,15 @@
+mixin NewBlock({ type = 'vertical', link, image, title, category, date })
+  .NewBlock(class=`${type}`)
+    .NewBlock-image 
+      a(href=`${link}`) 
+        img(src=`${image}`, alt="")
+
+    .NewBlock-info 
+      a(href=`${link}`).NewBlock-info-title= title 
+
+      if (category || date)
+        .NewBlock-info-footer 
+          if (category)
+            span.NewBlock-info-category= category
+          if (date)
+            span.NewBlock-info-date= date

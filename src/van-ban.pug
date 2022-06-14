@@ -1,0 +1,13 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  div(style="margin-bottom: 1.2rem;")
+    +SearchInput({ placeholder: 'Tìm kiếm văn bản' })
+
+  div(style="margin-bottom: 1.2rem;")
+    include includes/containers/HashTagList.pug
+
+  div
+    each item in dataDocuments
+      +Document(item)
+

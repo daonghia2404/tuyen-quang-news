@@ -1,0 +1,15 @@
+.HashTag {
+  padding: .6rem 1rem;
+  width: fit-content;
+  background: rgba($concrete, 0.75);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  border-radius: .6rem;
+  color: $raven;
+  transition: $common-transition;
+
+  &:hover,
+  &.active {
+    color: $ecstasy;
+  }
+}

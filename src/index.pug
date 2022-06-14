@@ -1,0 +1,9 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  include includes/containers/TabsCarousels.pug
+  +ImageBanner({ image: './assets/images/image-banner.png' })
+
+  div
+    +NewsList({ title: 'TIN TỨC - SỰ KIỆN', data: dataListFeatureNews })
+    +NewsList({ title: 'KINH TẾ', data: dataListLastestNews })

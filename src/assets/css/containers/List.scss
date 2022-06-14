@@ -1,0 +1,43 @@
+.List {
+  &:not(:last-child) {
+    margin-bottom: 1.6rem;
+  }
+
+  &-header {
+    padding: 0.8rem 1.6rem;
+    margin: 0 -1.6rem .8rem;
+    border-bottom: 1px solid $concrete;
+  }
+
+  &-title {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: $coral-red;
+  }
+
+  &-item {
+    padding: 0.8rem 0;
+
+    &:hover {
+      .List-item {
+        &-title {
+          color: $coral-red;
+        }
+      }
+    }
+
+    &-icon {
+      flex: 0 0 2rem;
+      max-width: 2rem;
+      height: 2rem;
+      margin: 0 1.6rem 0 0;
+    }
+
+    &-title {
+      font-size: 1.4rem;
+      font-weight: 500;
+      color: $royal-blue;
+      transition: $common-transition;
+    }
+  }
+}

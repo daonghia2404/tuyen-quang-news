@@ -1,0 +1,6 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  +Breadcrumb({ title: 'Xây dựng Đảng và hệ thống chính trị' })
+
+  +NewsList({ data: dataListFeatureNews })

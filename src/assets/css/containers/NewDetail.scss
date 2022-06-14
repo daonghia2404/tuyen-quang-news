@@ -1,0 +1,22 @@
+.NewDetail {
+  margin-bottom: 2.4rem;
+
+  &-title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+  }
+
+  &-date {
+    font-weight: 300;
+    color: $silver;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+
+    &-icon {
+      flex: 0 0 1.6rem;
+      max-width: 1.6rem;
+      margin-right: .4rem;
+    }
+  }
+}

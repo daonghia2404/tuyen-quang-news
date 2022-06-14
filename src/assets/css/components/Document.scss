@@ -1,0 +1,56 @@
+.Document {
+  margin: 0 -1.6rem;
+  padding: 1.2rem 1.6rem;
+  border-bottom: 1px solid $concrete;
+
+  &-icon {
+    flex: 0 0 1.6rem;
+    max-width: 1.6rem;
+    margin-right: .4rem;
+  }
+
+  &-info {
+    flex: 1;
+
+    &-title {
+      margin-bottom: .4rem;
+
+      a {
+        color: $azure-radiance;
+        font-size: 1.3rem;
+        font-weight: 500;
+      }
+    }
+
+    &-description {
+      margin-bottom: .4rem;
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: $azure-radiance;
+    }
+
+    &-owner {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: $ecstasy;
+    }
+
+    &-sub {
+      font-size: 1.1rem;
+      font-weight: 300;
+      color: $gray;
+      position: relative;
+      white-space: nowrap;
+
+      &::before {
+        width: .4rem;
+        height: .4rem;
+        border-radius: 50%;
+        background: $gray;
+        content: '';
+        display: inline-block;
+        margin: 0 1rem 0.15rem;
+      }
+    }
+  }
+}

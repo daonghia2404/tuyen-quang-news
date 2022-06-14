@@ -1,0 +1,19 @@
+.TabsCarousels.tabs-wrapper
+  .TabsCarousels-header.flex.flex-wrap 
+    +Tag({ title: 'Tin Nổi Bật', isTab: true })
+    +Tag({ title: 'Tin Mới Nhất', isTab: true })
+
+  .TabsCarousels-main 
+    .tab-main-item
+      .owl-carousel.News-carousel 
+        each item in dataCarouselFeatureNews
+          .item 
+            .TabsCarousels-carousel-item 
+              +NewBlock(item)
+
+    .tab-main-item
+      .owl-carousel.News-carousel 
+        each item in dataCarouselLastestNews
+          .item 
+            .TabsCarousels-carousel-item 
+              +NewBlock(item)

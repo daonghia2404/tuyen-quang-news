@@ -1,0 +1,9 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  +Breadcrumb({ title: 'Kinh tế' })
+
+  include includes/containers/NewDetail.pug
+
+  div
+    +NewsList({ title: 'CÙNG CHUYÊN MỤC', data: dataListFeatureNews })

@@ -1,0 +1,8 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  div(style="margin-bottom: 1.2rem;")
+    +SearchInput({ placeholder: 'Tìm kiếm bài viết', value: 'ngày hội toàn dân 2022' })
+
+  p(style="font-size: 1.6rem; margin-bottom: 1.2rem;") Tìm thấy 15 kết quả
+  +NewsList({ mainPost: false, data: dataListFeatureNews })

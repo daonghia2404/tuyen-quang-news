@@ -1,0 +1,18 @@
+extends includes/layouts/Layout.pug
+
+block pages
+  div(style="margin-bottom: 1.2rem;")
+    +Tag({ title: 'GIỚI THIỆU CHUNG', active: true })
+
+  div(style="margin-bottom: 2.4rem;")
+    +NewBlock({
+      link: 'chi-tiet-bai-viet.html',
+      title: 'GIỚI THIỆU CỔNG THÔNG TIN ĐIỆN TỬ ĐẢNG BỘ TỈNH TUYÊN QUANG',
+      image: './assets/images/image-new-about.png',
+    })
+
+  div
+    +List({ title: 'ĐẢNG BỘ TỈNH KHÓA XVII', data: dataList })
+    +List({ title: 'CƠ QUAN THAM MƯU, GIÚP VIỆC TỈNH ỦY', data: dataList })
+    +List({ title: 'HUYỆN ỦY/THÀNH ỦY TRỰC THUỘC', data: dataList })
+    +List({ title: 'ĐẢNG BỘ TRỰC THUỘC', data: dataList })

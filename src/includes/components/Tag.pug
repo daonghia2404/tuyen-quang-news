@@ -1,0 +1,5 @@
+mixin Tag({ link, title, isTab, active })
+  if (link)
+    a(class=`${isTab ? 'tab-item' : ''} ${active ? 'active' : ''}` href=`${link}`).Tag= title
+
+  .Tag(class=`${isTab ? 'tab-item' : ''} ${active ? 'active' : ''}`)= title

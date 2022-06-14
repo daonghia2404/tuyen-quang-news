@@ -1,0 +1,19 @@
+mixin NewsList({ title, mainPost = true, data = [] })
+  .NewsList
+    .NewsList-wrapper 
+      if (title)
+        .NewsList-header.flex.items-center.justify-between
+          .NewsList-title= title
+          a(href="danh-muc.html").NewsList-see-all Tất cả
+
+      .NewsList-body
+        if (mainPost)
+          .NewsList-main
+            .NewsList-body-item
+              +NewBlock(data[0])
+
+        .NewsList-main-list
+          each item, index in data
+            if (index > 0)
+              .NewsList-body-item
+                +NewBlock(item)

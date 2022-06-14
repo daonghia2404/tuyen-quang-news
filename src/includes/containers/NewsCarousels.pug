@@ -1,0 +1,11 @@
+.NewsCarousels
+  .NewsCarousels-header.flex.flex-wrap 
+    +Tag({ title: 'Tin Nổi Bật', active: true })
+
+  .NewsCarousels-main 
+    .owl-carousel.News-carousel 
+      each item in dataCarouselFeatureNews
+        .item 
+          .NewsCarousels-carousel-item 
+            +NewBlock(item)
+
