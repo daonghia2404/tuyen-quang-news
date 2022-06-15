@@ -1435,11 +1435,11 @@ ul {
       overflow: auto; }
   .Sidebar-list-item-wrapper {
     padding: 1.6rem 0; }
-    .Sidebar-list-item-wrapper.active .Sidebar-list-item-icon svg:not(.stroke) path {
+    .Sidebar-list-item-wrapper:hover .Sidebar-list-item-icon svg:not(.stroke) path, .Sidebar-list-item-wrapper.active .Sidebar-list-item-icon svg:not(.stroke) path {
       fill: #F98121; }
-    .Sidebar-list-item-wrapper.active .Sidebar-list-item-icon svg.stroke path {
+    .Sidebar-list-item-wrapper:hover .Sidebar-list-item-icon svg.stroke path, .Sidebar-list-item-wrapper.active .Sidebar-list-item-icon svg.stroke path {
       stroke: #F98121; }
-    .Sidebar-list-item-wrapper.active .Sidebar-list-item-link {
+    .Sidebar-list-item-wrapper:hover .Sidebar-list-item-link, .Sidebar-list-item-wrapper.active .Sidebar-list-item-link {
       color: #F98121; }
   .Sidebar-list-item-icon {
     flex: 0 0 2.4rem;
