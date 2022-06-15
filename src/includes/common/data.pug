@@ -41,6 +41,38 @@
       link: 'index.html',
     },
     {
+      path: ['/gioi-thieu.html', '/lien-ket.html'],
+      title: 'Giới thiệu',
+      icon: 'bookmark',
+      link: '#',
+      children: [
+        {
+          path: ['/gioi-thieu.html'],
+          title: 'Giới thiệu chung',
+          icon: 'arrow',
+          link: 'gioi-thieu.html',
+        },
+        {
+          path: ['/lien-ket.html'],
+          title: 'Cơ cấu tổ chức',
+          icon: 'arrow',
+          link: 'lien-ket.html',
+        },
+        {
+          path: [],
+          title: 'Ban thường vụ Tỉnh uỷ',
+          icon: 'arrow',
+          link: 'gioi-thieu-chi-tiet.html',
+        },
+        {
+          path: [],
+          title: 'Ban chấp hành Đảng bộ Tỉnh',
+          icon: 'arrow',
+          link: 'gioi-thieu-chi-tiet.html',
+        },
+      ],
+    },
+    {
       path: [],
       title: 'Thời sự - Chính trị',
       icon: 'bookmark',
@@ -54,7 +86,45 @@
         },
         {
           path: [],
-          title: 'Hoạt động của cấp ủy',
+          title: 'Hoạt động của cấp ủy các cấp',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+      ],
+    },
+    {
+      path: [],
+      title: 'Xây dựng Đảng',
+      icon: 'bookmark',
+      link: '#',
+      children: [
+        {
+          path: [],
+          title: 'Xây dựng Đảng và hệ thống chính trị',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'Đưa Nghị quyết của Đảng vào cuộc sống',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'Học tập và làm theo tư tưởng, đạo đức, phong cách Hồ Chí Minh',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'Bảo vệ nền tảng tư tưởng của Đảng',
+          icon: 'arrow',
+          link: 'danh-muc.html',
+        },
+        {
+          path: [],
+          title: 'Nghiên cứu trao đổi',
           icon: 'arrow',
           link: 'danh-muc.html',
         },
@@ -64,82 +134,66 @@
       path: [],
       title: 'Kinh tế',
       icon: 'bookmark',
-      link: '#',
-      children: [
-        {
-          path: [],
-          title: 'Kinh tế vĩ mô',
-          icon: 'arrow',
-          link: 'danh-muc.html',
-        },
-        {
-          path: [],
-          title: 'Kinh tế thế giới',
-          icon: 'arrow',
-          link: 'danh-muc.html',
-        },
-      ],
+      link: 'danh-muc.html',
+      children: [],
     },
     {
       path: [],
       title: 'Văn hóa',
       icon: 'bookmark',
-      link: '#',
-      children: [
-        {
-          path: [],
-          title: 'Văn hoá dân tộc',
-          icon: 'arrow',
-          link: 'danh-muc.html',
-        },
-        {
-          path: [],
-          title: 'Phong tục tập quán',
-          icon: 'arrow',
-          link: 'danh-muc.html',
-        },
-      ],
+      link: 'danh-muc.html',
+      children: [],
     },
     {
       path: [],
       title: 'Quốc phòng - An ninh',
       icon: 'bookmark',
+      link: 'danh-muc.html',
+      children: [],
+    },
+    {
+      path: [],
+      title: 'Văn bản - Tư liệu',
+      icon: 'bookmark',
       link: '#',
       children: [
         {
           path: [],
-          title: 'Quân đội',
+          title: 'Văn kiện Đại hội',
           icon: 'arrow',
-          link: 'danh-muc.html',
+          link: 'van-ban.html',
         },
         {
           path: [],
-          title: 'An ninh Quốc gia',
+          title: 'Văn bản của Tỉnh',
           icon: 'arrow',
-          link: 'danh-muc.html',
+          link: 'van-ban.html',
+        },
+        {
+          path: [],
+          title: 'Văn bản của TW',
+          icon: 'arrow',
+          link: 'van-ban.html',
+        },
+        {
+          path: [],
+          title: 'Tài liệu tuyên truyền',
+          icon: 'arrow',
+          link: 'van-ban.html',
+        },
+        {
+          path: [],
+          title: 'Tài liệu lịch sử',
+          icon: 'arrow',
+          link: 'van-ban.html',
+        },
+        {
+          path: [],
+          title: 'Biên niên sự kiện lịch sử Đảng bộ tỉnh (Giai đoạn 1976-2015)',
+          icon: 'arrow',
+          link: 'van-ban.html',
         },
       ],
-    },
-    {
-      path: [],
-      title: 'Đất và người Tuyên Quang',
-      icon: 'bookmark',
-      link: 'danh-muc.html',
-      children: [],
-    },
-    {
-      path: [],
-      title: 'Phòng chống dịch Covid-19',
-      icon: 'bookmark',
-      link: 'danh-muc.html',
-      children: [],
-    },
-    {
-      path: ['/lien-ket.html'],
-      title: 'Liên kết',
-      icon: 'link',
-      link: 'lien-ket.html',
-      children: [],
     },
     {
       path: ['/lien-he.html'],
@@ -252,6 +306,229 @@
     },
   ]
 
+  const dataListSocialsNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261316588_96643.jpg',
+      title: 'Không ép buộc mua sách tham khảo, sách bài tập',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261016396_96633.jpg',
+      title: 'Đào tạo nghề gắn với thực tiễn',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261016365_96632.jpg',
+      title: 'Thôn Cao Ngỗi đã có sóng điện thoại',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226149317_96648.jpg',
+      title: 'Tăng lương tối thiểu vùng cho người lao động từ 01/7/2022',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202267163732_96622.jpg',
+      title: 'Chuẩn bị tốt các điều kiện cho Kỳ thi tốt nghiệp THPT năm 2022',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202267162753_96621.jpg',
+      title: 'Huy động sức dân xóa nhà tạm, dột nát',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataListSecurityNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226285523_96596.jpg',
+      title: 'Diễn tập chiến đấu phòng thủ phường Đội Cấn năm 2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202251815342_91519.jpg',
+      title: 'Bộ CHQS tỉnh xây dựng Đơn vị dân vận tốt',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022426134832_89375.jpg',
+      title: 'Xứng đáng là chỗ dựa tin cậy của nhân dân',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/images/75%20nam%20LLVT.gif',
+      title: 'Lực lượng vũ trang tỉnh Tuyên Quang 75 năm xây dựng, chiến đấu và trưởng thành',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/images/qdndvn_20210827100433.jpg',
+      title: 'Tuyên Quang: Phát huy vai trò của công tác tuyên giáo trong phối hợp tuyên truyền về nhiệm vụ quân sự, quốc phòng trên địa bàn tỉnh',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataListInfographicNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202261411334_96649.png',
+      title: 'Quan điểm, mục tiêu, nhiệm vụ và giải pháp Chiến lược kế toán - kiểm toán đến năm 2030',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226149317_96648.jpg',
+      title: 'Tăng lương tối thiểu vùng cho người lao động từ 01/7/2022',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613212040_96647.jpg',
+      title: 'Tự phê bình và phê bình',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613211352_96646.png',
+      title: 'Quá trình hoạt động cách mạng của đồng chí Hồ Tùng Mậu',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613202449_96645.jpg',
+      title: 'Mục tiêu, nhiệm vụ và giải pháp Kế hoạch triển khai thực hiện Chương trình về phòng, chống bạo lực gia đình trong tình hình mới đến năm 2025 trên địa bàn tỉnh Tuyên Quang',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataListCovidNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022613165247_96641.jpg',
+      title: 'Thêm cơ hội được bảo vệ trước dịch bệnh Covid-19',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202269171053_96630.jpeg',
+      title: 'Triển khai tiêm vắc xin phòng COVID-19 mũi 4 cho người từ 18 tuổi trở lên',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226917428_96629.jpg',
+      title: 'Thực hiện biện pháp phòng dịch phù hợp trong bối cảnh mới',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022531165228_96588.jpg',
+      title: 'Tránh lạm dụng chỉ định khi người dân đi khám hậu Covid-19',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022524174152_94547.jpg',
+      title: 'Rà soát, đẩy nhanh tiến độ tiêm vắc xin phòng Covid-19 mũi 3 cho người từ 18 tuổi trở lên',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataListGovermentNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/images/115(1).jpg',
+      title: 'Thấm nhuần tư tưởng thi đua ái quốc',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/images/dbieu%20bo%20phieu.jpg',
+      title: 'Cơ chế bảo đảm thực hiện có hiệu quả nguyên tắc tập trung dân chủ trong Đảng hiện nay',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/images/V%c3%b5%20Van%20Thuong.jpg',
+      title: 'Nâng cao chất lượng nghiên cứu, học tập, quán triệt nghị quyết của Đảng, đáp ứng yêu cầu nhiệm vụ trong giai đoạn mới',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/images/article%20(1)(10).jpg',
+      title: 'Mặt trận Tổ quốc Việt Nam tập hợp, vận động người Việt Nam ở nước ngoài đoàn kết, hướng về xây dựng và bảo vệ Tổ quốc',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/images/img_20220415164017.jpg',
+      title: 'Tuyên Quang: Chú trọng thực hiện tốt Quy chế dân chủ ở cơ sở',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
+  const dataListLevelsNews = [
+    {
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022614152231_96651.jpg',
+      title: 'Lấy ý kiến vào Dự thảo báo cáo chính trị trình Đại hội Đoàn TNCS Hồ Chí Minh',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20226814283_96625.jpg',
+      title: 'Lâm Bình nêu cao vai trò, trách nhiệm của người đứng đầu',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/2022527141740_95562.jpg',
+      title: 'Phấn đấu có 8 xã điển hình về phong trào "Toàn dân bảo vệ an ninh Tổ quốc" đến hết năm 2022',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/20225268018_95556.jpg',
+      title: 'HĐND huyện Lâm Bình tổ chức kỳ họp chuyên đề',
+      date: '16h45 10/06/2022',
+    },
+    {
+      type: 'horizontal',
+      link: 'chi-tiet-bai-viet.html',
+      image: 'https://tuyenquang.dcs.vn/Image/Large/202252422545_94548.jpg',
+      title: 'Tổng kết 10 năm thực hiện công tác hậu cần Quân đội',
+      date: '16h45 10/06/2022',
+    },
+  ]
+
   const dataCarouselLastestNews = [
     {
       link: 'chi-tiet-bai-viet.html',
@@ -328,19 +605,19 @@
 
   const dataList = [
     {
-      link: 'danh-muc.html',
+      link: 'gioi-thieu-chi-tiet.html',
       title: 'THƯỜNG TRỰC TỈNH ỦY',
     },
     {
-      link: 'danh-muc.html',
+      link: 'gioi-thieu-chi-tiet.html',
       title: 'BAN THƯỜNG VỤ TỈNH ỦY',
     },
     {
-      link: 'danh-muc.html',
+      link: 'gioi-thieu-chi-tiet.html',
       title: 'ỦY BAN KIỂM TRA TỈNH ỦY',
     },
     {
-      link: 'danh-muc.html',
+      link: 'gioi-thieu-chi-tiet.html',
       title: 'BAN CHẤP HÀNH ĐẢNG BỘ TỈNH TUYÊN QUANG',
     },
   ]

@@ -85,14 +85,21 @@ const header = {
     const sidebarLinks = document.querySelectorAll(
       ".Sidebar-list-item-wrapper"
     );
+    const prefixPublicSite = `/tuyen-quang-news/dist`;
 
     sidebarLinks.forEach((item) => {
-      const dataPath = item.dataset.path.split(",");
+      const dataPath = item.dataset.path
+        .split(",")
+        .map((item) => `${prefixPublicSite}${item}`); // Remove this when site is not in github
+
       if (dataPath.includes(pathname)) item.classList.add("active");
     });
 
     navigationLinks.forEach((item) => {
-      const dataPath = item.dataset.path.split(",");
+      const dataPath = item.dataset.path
+        .split(",")
+        .map((item) => `${prefixPublicSite}${item}`); // Remove this when site is not in github
+
       if (dataPath.includes(pathname)) item.classList.add("active");
     });
   },

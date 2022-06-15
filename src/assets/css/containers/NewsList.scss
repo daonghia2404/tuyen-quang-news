@@ -19,6 +19,12 @@
   &-see-all {
     font-size: 1.1rem;
     color: rgba($gray, 0.7);
+    white-space: nowrap;
+    margin-top: 0.3rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &-main {

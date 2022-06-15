@@ -2,7 +2,7 @@ mixin NewsList({ title, mainPost = true, data = [] })
   .NewsList
     .NewsList-wrapper 
       if (title)
-        .NewsList-header.flex.items-center.justify-between
+        .NewsList-header.flex.items-start.justify-between
           .NewsList-title= title
           a(href="danh-muc.html").NewsList-see-all Tất cả
 
