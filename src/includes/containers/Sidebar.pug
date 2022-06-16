@@ -7,7 +7,7 @@
     .Sidebar-list
       each item in dataSidebar
         .Sidebar-list-item
-          .Sidebar-list-item-wrapper.flex.items-start(data-path=`${item.path}`)
+          .Sidebar-list-item-wrapper.flex.items-start.justify-between(data-path=`${item.path}`)
             .Sidebar-list-item-icon
               if (item.icon === 'home')
                 <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.22919 9.58331H4.31252V16.2916H6.22919V9.58331ZM11.9792 9.58331H10.0625V16.2916H11.9792V9.58331ZM20.125 18.2083H1.91669V20.125H20.125V18.2083ZM17.7292 9.58331H15.8125V16.2916H17.7292V9.58331ZM11.0209 3.12415L16.0138 5.74998H6.02794L11.0209 3.12415ZM11.0209 0.958313L1.91669 5.74998V7.66665H20.125V5.74998L11.0209 0.958313Z" fill="#6F7789"/></svg>
@@ -25,6 +25,10 @@
                 <svg class="stroke" width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3.83335 3.83334H19.1667C20.2209 3.83334 21.0834 4.69584 21.0834 5.75V17.25C21.0834 18.3042 20.2209 19.1667 19.1667 19.1667H3.83335C2.77919 19.1667 1.91669 18.3042 1.91669 17.25V5.75C1.91669 4.69584 2.77919 3.83334 3.83335 3.83334Z" stroke="#767676" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.0834 5.75L11.5 12.4583L1.91669 5.75" stroke="#767676" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
 
             a(href=`${item.link}`).Sidebar-list-item-link= item.title 
+
+            if (item.children && item.children.length > 0)
+              .Sidebar-list-item-arrow
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#6F7789" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="9 6 15 12 9 18" /></svg>
 
           if (item.children && item.children.length > 0)
             .Sidebar-list-sub 

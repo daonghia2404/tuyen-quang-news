@@ -127,6 +127,7 @@ const header = {
         const wrapper = item.querySelector(".Sidebar-list-item-wrapper");
         wrapper.addEventListener("click", (e) => {
           e.preventDefault();
+          wrapper.classList.toggle("active");
           children.classList.toggle("active");
         });
       }

@@ -1435,6 +1435,10 @@ ul {
       overflow: auto; }
   .Sidebar-list-item-wrapper {
     padding: 1.6rem 0; }
+    .Sidebar-list-item-wrapper.active .Sidebar-list-item-arrow {
+      transform: rotate(90deg); }
+      .Sidebar-list-item-wrapper.active .Sidebar-list-item-arrow svg {
+        stroke: #F98121; }
     .Sidebar-list-item-wrapper:hover .Sidebar-list-item-icon svg:not(.stroke) path, .Sidebar-list-item-wrapper.active .Sidebar-list-item-icon svg:not(.stroke) path {
       fill: #F98121; }
     .Sidebar-list-item-wrapper:hover .Sidebar-list-item-icon svg.stroke path, .Sidebar-list-item-wrapper.active .Sidebar-list-item-icon svg.stroke path {
@@ -1457,6 +1461,10 @@ ul {
     transition: 0.3s ease;
     display: block;
     width: 100%; }
+  .Sidebar-list-item-arrow {
+    transition: 0.3s ease; }
+    .Sidebar-list-item-arrow svg {
+      transition: 0.3s ease; }
 
 .NewDetail {
   margin-bottom: 2.4rem; }
