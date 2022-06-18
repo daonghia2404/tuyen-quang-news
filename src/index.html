@@ -20,9 +20,19 @@
     </header>
     <main>
       <div class="TabsCarousels tabs-wrapper">
-        <div class="TabsCarousels-header flex flex-wrap"> 
-          <div class="Tag tab-item ">Tin Nổi Bật</div>
-          <div class="Tag tab-item ">Tin Mới Nhất</div>
+        <div class="TabsCarousels-header flex items-center justify-between">
+          <div class="TabsCarousels-header-tabs flex">
+            <div class="Tag tab-item ">Tin Nổi Bật</div>
+            <div class="Tag tab-item ">Tin Mới Nhất</div>
+          </div>
+          <div class="TabsCarousels-header-search" style="margin-bottom: 1rem;">
+            <form class="SearchInput flex items-center" action="#"> 
+              <div class="SearchInput-control">
+                <input type="text" placeholder="Tìm kiếm" value=""/>
+              </div>
+              <button class="SearchInput-icon" type="submit"><svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5.3803 0.916687C7.84155 0.916687 9.84355 2.91869 9.84355 5.37994C9.84355 6.54115 9.39793 7.60023 8.66868 8.39508L10.1036 9.82701C10.2379 9.9613 10.2384 10.1785 10.1041 10.3128C10.0372 10.3807 9.9487 10.4141 9.8607 10.4141C9.77315 10.4141 9.68515 10.3807 9.61778 10.3138L8.16553 8.86556C7.40159 9.47736 6.43295 9.84365 5.3803 9.84365C2.91905 9.84365 0.916595 7.84119 0.916595 5.37994C0.916595 2.91869 2.91905 0.916687 5.3803 0.916687ZM5.3803 1.60419C3.2981 1.60419 1.6041 3.29773 1.6041 5.37994C1.6041 7.46215 3.2981 9.15615 5.3803 9.15615C7.46205 9.15615 9.15605 7.46215 9.15605 5.37994C9.15605 3.29773 7.46205 1.60419 5.3803 1.60419Z" fill="black"/></svg></button>
+            </form>
+          </div>
         </div>
         <div class="TabsCarousels-main"> 
           <div class="tab-main-item">

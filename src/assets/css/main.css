@@ -1059,6 +1059,7 @@ ul {
   cursor: pointer;
   border-radius: 1rem;
   border: 1px solid #F0F1FA;
+  white-space: nowrap;
   padding: 0.5rem 1rem; }
   .Tag:hover, .Tag.active {
     background: linear-gradient(119.65deg, #FF3A44 0%, #FF8086 128.41%);
@@ -1099,6 +1100,7 @@ ul {
   margin-bottom: 0.8rem;
   color: #000;
   transition: 0.3s ease;
+  text-align: justify;
   height: 5.5rem;
   overflow: hidden;
   text-overflow: ellipsis;

@@ -1,7 +1,11 @@
 .TabsCarousels.tabs-wrapper
-  .TabsCarousels-header.flex.flex-wrap 
-    +Tag({ title: 'Tin Nổi Bật', isTab: true })
-    +Tag({ title: 'Tin Mới Nhất', isTab: true })
+  .TabsCarousels-header.flex.items-center.justify-between
+    .TabsCarousels-header-tabs.flex
+      +Tag({ title: 'Tin Nổi Bật', isTab: true })
+      +Tag({ title: 'Tin Mới Nhất', isTab: true })
+
+    .TabsCarousels-header-search(style="margin-bottom: 1rem;")
+      +SearchInput({ placeholder: 'Tìm kiếm' })
 
   .TabsCarousels-main 
     .tab-main-item
